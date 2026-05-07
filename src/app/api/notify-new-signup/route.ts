@@ -72,22 +72,114 @@ export async function POST(req: Request) {
     `https://operavo.ai/dashboard`,
   ].join("\n");
 
-  const html = `
-    <div style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#111;line-height:1.55">
-      <h2 style="margin:0 0 12px;font-size:18px">New signup on Operavo</h2>
-      <table style="border-collapse:collapse;font-size:14px">
-        <tr><td style="padding:4px 12px 4px 0;color:#666">Name</td><td><strong>${escapeHtml(name)}</strong></td></tr>
-        <tr><td style="padding:4px 12px 4px 0;color:#666">Email</td><td>${escapeHtml(email)}</td></tr>
-        <tr><td style="padding:4px 12px 4px 0;color:#666">Role</td><td>${escapeHtml(role)}</td></tr>
-        <tr><td style="padding:4px 12px 4px 0;color:#666">Status</td><td>${escapeHtml(status)}</td></tr>
-        <tr><td style="padding:4px 12px 4px 0;color:#666">Tenant ID</td><td><code>${escapeHtml(tenantId)}</code></td></tr>
-        <tr><td style="padding:4px 12px 4px 0;color:#666">Created</td><td>${escapeHtml(createdAt)}</td></tr>
-      </table>
-      <p style="margin-top:18px;font-size:13px">
-        <a href="https://operavo.ai/dashboard" style="color:#059669">Review &amp; approve in dashboard →</a>
-      </p>
-    </div>
-  `;
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="supported-color-schemes" content="dark">
+  <title>New signup on Operavo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #050505; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #050505; padding: 48px 20px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width: 560px; width: 100%;">
+          <tr>
+            <td style="padding: 0 0 32px 0;">
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="vertical-align: middle; padding-right: 10px;">
+                    <div style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; box-shadow: 0 0 10px rgba(16, 185, 129, 0.8);"></div>
+                  </td>
+                  <td style="vertical-align: middle;">
+                    <span style="color: #ffffff; font-size: 20px; font-weight: 600; letter-spacing: -0.02em;">Operavo</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #0a0a0a; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 40px;">
+              <p style="margin: 0 0 14px 0; color: #34d399; font-size: 11px; line-height: 1; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">
+                New signup
+              </p>
+              <h1 style="margin: 0 0 20px 0; color: #ffffff; font-size: 32px; font-weight: 500; line-height: 1.15; letter-spacing: -0.025em;">
+                A new client <em style="font-style: italic; font-weight: 400; color: #34d399;">just signed up</em>.
+              </h1>
+              <p style="margin: 0 0 28px 0; color: #a1a1aa; font-size: 15px; line-height: 1.65;">
+                Review the workspace details below and approve, pair them with a Vapi assistant, or revoke access from your dashboard.
+              </p>
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; background-color: rgba(255,255,255,0.02);">
+                <tr>
+                  <td style="padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <p style="margin: 0 0 4px 0; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Name</p>
+                    <p style="margin: 0; color: #ffffff; font-size: 14px;">${escapeHtml(name)}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <p style="margin: 0 0 4px 0; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Email</p>
+                    <p style="margin: 0; color: #ffffff; font-size: 14px;">${escapeHtml(email)}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <p style="margin: 0 0 4px 0; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Role</p>
+                    <p style="margin: 0; color: #ffffff; font-size: 14px;">${escapeHtml(role)}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <p style="margin: 0 0 4px 0; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Status</p>
+                    <p style="margin: 0; color: #ffffff; font-size: 14px;">${escapeHtml(status)}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <p style="margin: 0 0 4px 0; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Tenant ID</p>
+                    <p style="margin: 0; color: #d4d4d8; font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;">${escapeHtml(tenantId)}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 14px 18px;">
+                    <p style="margin: 0 0 4px 0; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Created</p>
+                    <p style="margin: 0; color: #ffffff; font-size: 14px;">${escapeHtml(createdAt)}</p>
+                  </td>
+                </tr>
+              </table>
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin: 32px 0 12px 0;">
+                <tr>
+                  <td align="center">
+                    <a href="https://operavo.ai/dashboard"
+                       style="display: inline-block; background-color: #ffffff; color: #050505; text-decoration: none; padding: 15px 32px; border-radius: 999px; font-size: 15px; font-weight: 500; letter-spacing: -0.005em; box-shadow: 0 0 40px -10px rgba(255,255,255,0.25);">
+                      Review &amp; approve &nbsp;→
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <div style="height: 1px; background-color: rgba(255,255,255,0.06); margin: 32px 0 20px 0;"></div>
+              <p style="margin: 0; color: #52525b; font-size: 13px; line-height: 1.6;">
+                You're receiving this because you're an admin on Operavo. New signups are flagged here automatically.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 28px 8px 0 8px;">
+              <p style="margin: 0 0 6px 0; color: #a1a1aa; font-size: 13px; font-weight: 500;">— The Operavo Team</p>
+              <p style="margin: 0; color: #52525b; font-size: 12px; line-height: 1.6;">Internal notification · Do not forward.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
 
   const resendRes = await fetch("https://api.resend.com/emails", {
     method: "POST",
