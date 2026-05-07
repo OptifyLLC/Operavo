@@ -5,7 +5,7 @@ const faqs: Array<{ q: string; a: string }> = [
   },
   {
     q: "Can I keep my existing phone number?",
-    a: "Yes. We port your number so callers reach the same line. Operavo picks up before the ring goes through.",
+    a: "Operavo runs on a dedicated Vapi or Twilio number. You can forward your existing line to it so callers still reach the same point of contact, or publish the new number directly.",
   },
   {
     q: "Will it sound like a robot?",
