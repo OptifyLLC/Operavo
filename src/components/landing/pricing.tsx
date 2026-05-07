@@ -29,7 +29,7 @@ const tiers: Tier[] = [
     annualPrice: "$4,590",
     monthlySuffix: "/mo",
     annualSuffix: "/year",
-    annualNote: "Save 15% — equivalent to ~$382/mo",
+    annualNote: "Save 15%, equivalent to ~$382/mo",
     usage: { minutes: "200 minutes included", overage: "$0.55 / min overage" },
     features: [
       "AI Receptionist 24/7",
@@ -55,7 +55,7 @@ const tiers: Tier[] = [
     annualPrice: "$13,250",
     monthlySuffix: "/mo",
     annualSuffix: "/year",
-    annualNote: "Save 15% — equivalent to ~$1,104/mo",
+    annualNote: "Save 15%, equivalent to ~$1,104/mo",
     usage: { minutes: "1,000 minutes included", overage: "$0.35 / min overage" },
     features: [
       "Everything in Launch",
@@ -79,8 +79,8 @@ const tiers: Tier[] = [
     subtitle: "Built for multi-office and high-volume operations.",
     monthlyPrice: "Custom",
     annualPrice: "Custom",
-    monthlyNote: "Contact Sales",
     annualNote: "Contact Sales",
+    usage: { minutes: "Custom minutes included", overage: "Volume-based overage pricing" },
     features: [
       "Everything in Professional",
       "Multi-Location Deployment",
@@ -111,7 +111,7 @@ const trustItems = [
   "<2s Average Response Time",
   "Enterprise-Grade Security",
   "CRM-Ready Integrations",
-  "Automated Appointment Booking",
+  "Automated Booking",
 ];
 
 export function Pricing() {
@@ -191,7 +191,7 @@ export function Pricing() {
         </ul>
       </div>
 
-      <div className="mt-12 space-y-1.5 text-[12.5px] leading-[1.6] text-zinc-500">
+      <div className="mt-12 space-y-1.5 text-center text-[12.5px] leading-[1.6] text-zinc-500">
         <p>Minutes are billed only during live connected conversations.</p>
         <p>Annual plans include discounted pricing and onboarding incentives.</p>
         <p>Additional integrations and deployment services available upon request.</p>

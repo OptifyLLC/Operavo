@@ -248,7 +248,7 @@ function ClientOverview() {
           Welcome back, {user.name.split(" ")[0]}
         </h1>
         <p className="mt-1.5 text-sm text-zinc-500">
-          Every call, booking, and lead — one pane for all of it.
+          Every call, booking, and lead in one pane.
         </p>
       </div>
 

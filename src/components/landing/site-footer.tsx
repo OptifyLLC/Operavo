@@ -163,7 +163,7 @@ function CtaBlock() {
           </h3>
           <p className="mt-5 text-[15px] leading-[1.6] text-zinc-300">
             Book a demo and our team will set up your workspace within a
-            business day — your number ported, your calendar connected, and a
+            business day, with your number ported, your calendar connected, and a
             live test call waiting the moment you&rsquo;re ready to flip the
             switch.
           </p>
@@ -255,7 +255,7 @@ function NewsletterForm() {
       </h3>
       <p className="mt-4 text-[14px] leading-[1.65] text-zinc-400">
         Product updates and release notes from the Operavo team. Unsubscribe
-        anytime — see our privacy policy for how we handle your email.
+        anytime. See our privacy policy for how we handle your email.
       </p>
 
       <form

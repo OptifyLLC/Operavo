@@ -123,7 +123,7 @@ export default function LeadsPage() {
             Qualified leads
           </h1>
           <p className="mt-1.5 text-sm text-zinc-500">
-            Every caller Operavo scored — with a two-sentence summary and
+            Every caller Operavo scored, with a two-sentence summary and
             recommended next step.
           </p>
         </div>

@@ -37,7 +37,7 @@ export function ProductSpotlight() {
         </h2>
         <p className="mx-auto mt-5 max-w-lg text-[15px] leading-[1.6] font-light text-zinc-400">
           A live call log, appointments on your Google Calendar, lead scoring,
-          and CSV export — every plan, every workspace.
+          and CSV export, every plan, every workspace.
         </p>
       </div>
 

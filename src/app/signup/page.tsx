@@ -76,7 +76,7 @@ export default function SignupPage() {
                 </h1>
                 <p className="mx-auto mt-4 max-w-sm text-[15px] leading-[1.6] font-light text-zinc-400">
                   An Operavo admin will approve your workspace within one
-                  business day — usually faster.
+                  business day, usually faster.
                 </p>
               </div>
 
@@ -226,14 +226,14 @@ function SuccessPanel({
           <>
             Thanks, {firstName}. We sent a confirmation link to{" "}
             <span className="text-zinc-200">{email}</span>. Click it to verify
-            your address, then our team will review your workspace — usually
+            your address, then our team will review your workspace, usually
             within one business day.
           </>
         ) : (
           <>
             Thanks, {firstName}. Your Operavo workspace is pending approval.
             You&rsquo;ll be able to sign in once our team reviews your
-            request — usually within one business day.
+            request, usually within one business day.
           </>
         )}
       </p>

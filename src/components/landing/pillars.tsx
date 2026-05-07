@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 const pillars: Array<{ title: string; body: string; icon: ReactNode }> = [
   {
     title: "Answered around the clock",
-    body: "Your line picks up every time — day, night, weekends. Prospects hear a live voice instead of voicemail, so leads stop slipping through the hours no one is at the desk.",
+    body: "Your line picks up every time, day, night, weekends. Prospects hear a live voice instead of voicemail, so leads stop slipping through the hours no one is at the desk.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
         <path d="M5 4.5h2.6l1.9 4-2.1 1.3a12 12 0 0 0 5.3 5.3l1.3-2.1 4 1.9V17a2 2 0 0 1-2 2C9 19 5 15 5 9Z" />
@@ -13,7 +13,7 @@ const pillars: Array<{ title: string; body: string; icon: ReactNode }> = [
   },
   {
     title: "Outcomes on the call",
-    body: "Meetings booked, leads qualified, and handoffs connected while the caller is still on the line — not left for someone to chase tomorrow.",
+    body: "Meetings booked, leads qualified, and handoffs connected while the caller is still on the line, not left for someone to chase tomorrow.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
         <circle cx="12" cy="12" r="8.5" opacity="0.55" />
@@ -25,7 +25,7 @@ const pillars: Array<{ title: string; body: string; icon: ReactNode }> = [
   },
   {
     title: "Sounds like your team",
-    body: "Trained on your business, your tone, and your offer. Callers feel like they reached someone who works for you — because the agent speaks for your brand, not ours.",
+    body: "Trained on your business, your tone, and your offer. Callers feel like they reached someone who works for you, because the agent speaks for your brand, not ours.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
         <path d="M4 6.5A1.5 1.5 0 0 1 5.5 5h13A1.5 1.5 0 0 1 20 6.5V14a1.5 1.5 0 0 1-1.5 1.5H11l-3.5 3.5v-3.5H5.5A1.5 1.5 0 0 1 4 14Z" />
@@ -56,7 +56,7 @@ export function Pillars() {
           </h2>
         </div>
         <p className="max-w-sm text-[15px] leading-[1.6] font-light text-zinc-400 md:text-right">
-          Three promises your callers feel the moment they dial in — from the
+          Three promises your callers feel the moment they dial in, from the
           first ring to the outcome.
         </p>
       </div>

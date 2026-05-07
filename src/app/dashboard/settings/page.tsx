@@ -380,7 +380,7 @@ function GoogleCalendarCard() {
     ? "Connect a calendar so Operavo can check availability and book slots."
     : needsReconnect
       ? row?.google_email
-        ? `Signed in as ${row.google_email} — calendar permission missing.`
+        ? `Signed in as ${row.google_email}, calendar permission missing.`
         : "Calendar permission missing."
       : row?.google_email
         ? `Connected as ${row.google_email}`

@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Privacy Policy | Operavo",
   description:
-    "How Operavo collects, uses, and protects information when you use our real-time inbound voice agent — including SMS opt-in and opt-out.",
+    "How Operavo collects, uses, and protects information when you use our real-time inbound voice agent, including SMS opt-in and opt-out.",
 };
 
 const sections: LegalSection[] = [
@@ -26,8 +26,8 @@ const sections: LegalSection[] = [
           <Strong>Operavo</Strong> (&ldquo;Operavo&rdquo;, &ldquo;we&rdquo;,
           &ldquo;us&rdquo;) collects, uses, shares, and safeguards personal
           information when you use{" "}
-          <Strong>Operavo</Strong> — our real-time voice agent that answers,
-          qualifies, books, and hands off inbound calls — together with our
+          <Strong>Operavo</Strong>, our real-time voice agent that answers,
+          qualifies, books, and hands off inbound calls, together with our
           dashboard, websites, and related services (the &ldquo;Service&rdquo;).
         </P>
         <P>
@@ -84,9 +84,9 @@ const sections: LegalSection[] = [
             partners when Operavo texts a booking confirmation.
           </LI>
           <LI label="Integration data">
-            Read and write tokens for the third-party tools you connect — for
+            Read and write tokens for the third-party tools you connect, for
             example Google Calendar, Google Drive, Google Sheets, and SMS
-            providers — limited to the scopes required to deliver the feature
+            providers, limited to the scopes required to deliver the feature
             you enabled.
           </LI>
           <LI label="Usage and device data">
@@ -148,7 +148,7 @@ const sections: LegalSection[] = [
         <P>
           Operavo sends SMS text messages from a verified toll-free or 10DLC
           number on behalf of our Customers. The program is{" "}
-          <Strong>transactional only</Strong> — appointment confirmations
+          <Strong>transactional only</Strong>: appointment confirmations
           and reminders for bookings made through the Operavo voice agent.
           We do not send marketing messages, drip sequences, or third-party
           content, and we never sell, rent, or share phone numbers with
@@ -212,7 +212,7 @@ const sections: LegalSection[] = [
             <Strong>UNSUBSCRIBE</Strong>, <Strong>CANCEL</Strong>,{" "}
             <Strong>END</Strong>, or <Strong>QUIT</Strong> to any message.
             We send a single confirmation and remove your number
-            immediately. Replying STOP does not cancel the appointment —
+            immediately. Replying STOP does not cancel the appointment;
             call the business directly to reschedule.
           </LI>
           <LI label="HELP">
@@ -241,7 +241,7 @@ const sections: LegalSection[] = [
         <P>We use the information described above to:</P>
         <UL>
           <LI>
-            Run live calls — route caller intent, check calendar availability,
+            Run live calls: route caller intent, check calendar availability,
             book the appointment, and trigger the SMS confirmation.
           </LI>
           <LI>
@@ -260,7 +260,7 @@ const sections: LegalSection[] = [
             de-identified data only.
           </LI>
           <LI>
-            Keep accounts, audio, and integrations secure — detect abuse,
+            Keep accounts, audio, and integrations secure: detect abuse,
             prevent fraud, and respond to incidents.
           </LI>
           <LI>
@@ -290,7 +290,7 @@ const sections: LegalSection[] = [
           </LI>
           <LI label="Legitimate interests">
             To keep the Service secure, prevent abuse, improve product
-            quality, and operate our business — balanced against your rights.
+            quality, and operate our business, balanced against your rights.
           </LI>
           <LI label="Consent">
             For optional analytics cookies, marketing emails, and any
@@ -318,7 +318,7 @@ const sections: LegalSection[] = [
             follow up.
           </LI>
           <LI label="Sub-processors">
-            Vetted vendors that run essential parts of the Service —
+            Vetted vendors that run essential parts of the Service:
             telephony, speech-to-text, large-language-model inference, SMS
             delivery, calendar sync, error monitoring, cloud hosting, and
             email delivery. Each is bound by a written data-processing
@@ -334,7 +334,7 @@ const sections: LegalSection[] = [
           </LI>
           <LI label="Successors">
             In connection with a merger, acquisition, or sale of all or part
-            of Operavo — under equivalent privacy commitments.
+            of Operavo, under equivalent privacy commitments.
           </LI>
         </UL>
       </>
@@ -414,7 +414,7 @@ const sections: LegalSection[] = [
           </LI>
           <LI label="Appeals">
             If we decline a request, you may appeal by replying to our
-            decision email — we&rsquo;ll respond within 45 days.
+            decision email, and we&rsquo;ll respond within 45 days.
           </LI>
         </UL>
       </>
@@ -430,7 +430,7 @@ const sections: LegalSection[] = [
           transit, AES-256 at rest, scoped access tokens, least-privilege IAM,
           mandatory two-factor authentication for staff with production
           access, and continuous logging of administrative actions. No system
-          is perfectly secure — please tell us about a vulnerability at{" "}
+          is perfectly secure, so please tell us about a vulnerability at{" "}
           <Strong>info@operavo.ai</Strong>.
         </P>
       </>
@@ -448,7 +448,7 @@ const sections: LegalSection[] = [
         </P>
         <UL>
           <LI label="Strictly necessary">
-            Session, CSRF, and theme — required for the dashboard to work.
+            Session, CSRF, and theme, required for the dashboard to work.
             Cannot be disabled.
           </LI>
           <LI label="Product analytics">
@@ -509,7 +509,7 @@ export default function PrivacyPage() {
     <LegalLayout
       eyebrow="Privacy"
       title="Privacy Policy"
-      lede="How Operavo handles the audio, transcripts, account information, and SMS confirmations that flow through the Service — written so a normal human can read it."
+      lede="How Operavo handles the audio, transcripts, account information, and SMS confirmations that flow through the Service, written so a normal human can read it."
       lastUpdated="April 23, 2026"
       sections={sections}
     />

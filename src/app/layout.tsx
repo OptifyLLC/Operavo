@@ -28,7 +28,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Operavo | The breath of optimization",
   description:
-    "Operavo is a real-time voice agent that answers, qualifies, books, and hands off every inbound call — so every caller feels heard, not just handled.",
+    "Operavo is a real-time voice agent that answers, qualifies, books, and hands off every inbound call, so every caller feels heard, not just handled.",
 };
 
 export default function RootLayout({

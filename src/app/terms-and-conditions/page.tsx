@@ -26,7 +26,7 @@ const sections: LegalSection[] = [
           contract between you (the &ldquo;Customer&rdquo;) and{" "}
           <Strong>Operavo</Strong> (&ldquo;Operavo&rdquo;, &ldquo;we&rdquo;,
           &ldquo;us&rdquo;), and govern your access to and use of{" "}
-          <Strong>Operavo</Strong> — our real-time voice agent — together with
+          <Strong>Operavo</Strong>, our real-time voice agent, together with
           the dashboard, websites, APIs, integrations, and documentation we
           provide (the &ldquo;Service&rdquo;).
         </P>
@@ -68,7 +68,7 @@ const sections: LegalSection[] = [
             compromise.
           </LI>
           <LI label="One human per seat">
-            Login credentials are personal — do not share them between
+            Login credentials are personal. Do not share them between
             multiple humans. Add seats instead.
           </LI>
         </UL>
@@ -122,7 +122,7 @@ const sections: LegalSection[] = [
             Use the Service only for lawful purposes. You are responsible for
             complying with telephony, recording, marketing, and consumer
             protection laws in every jurisdiction where your callers are
-            located — including the TCPA, CAN-SPAM, A2P 10DLC registration,
+            located, including the TCPA, CAN-SPAM, A2P 10DLC registration,
             two-party consent rules, GDPR, UK GDPR, and CCPA / CPRA.
           </LI>
           <LI label="Recording disclosures">
@@ -238,8 +238,8 @@ const sections: LegalSection[] = [
     body: (
       <P>
         Features marked &ldquo;beta&rdquo;, &ldquo;preview&rdquo;, or
-        &ldquo;coming soon&rdquo; — for example warm transfer with spoken
-        brief — are provided{" "}
+        &ldquo;coming soon&rdquo; (for example warm transfer with spoken
+        brief) are provided{" "}
         <Strong>&ldquo;as is&rdquo; and without warranty</Strong>. They may be
         modified or removed at any time, and they are not covered by any
         service-level commitment. Use them only for evaluation.
@@ -517,7 +517,7 @@ export default function TermsPage() {
     <LegalLayout
       eyebrow="Terms"
       title="Terms & Conditions"
-      lede="The agreement that governs how you and Operavo use Operavo together — written so you can read it once, not skim it forever."
+      lede="The agreement that governs how you and Operavo use Operavo together, written so you can read it once, not skim it forever."
       lastUpdated="April 19, 2026"
       sections={sections}
     />

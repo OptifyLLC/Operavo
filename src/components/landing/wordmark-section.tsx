@@ -64,7 +64,7 @@ const steps: Array<{ title: string; body: string; icon: ReactNode }> = [
   },
   {
     title: "Summarize",
-    body: "Sends transcript, lead score, and a one-line recap to your dashboard the moment the call ends.",
+    body: "Sends transcript, lead score, and a recap to your dashboard instantly.",
     icon: (
       <svg
         viewBox="0 0 24 24"

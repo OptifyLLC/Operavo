@@ -449,13 +449,13 @@ function CalendarStatus({ user }: { user: User }) {
         ? {
             dot: "bg-amber-400 shadow-[0_0_6px_rgba(251,191,36,0.8)]",
             text: "text-amber-300",
-            label: "Token expired — auto-refreshes",
+            label: "Token expired, auto-refreshes",
           }
         : c.health === "missing_scope"
           ? {
               dot: "bg-rose-400 shadow-[0_0_6px_rgba(244,63,94,0.8)]",
               text: "text-rose-300",
-              label: "Calendar permission missing — reconnect",
+              label: "Calendar permission missing, reconnect",
             }
           : {
               dot: "bg-rose-400 shadow-[0_0_6px_rgba(244,63,94,0.8)]",

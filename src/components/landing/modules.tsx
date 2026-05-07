@@ -21,7 +21,7 @@ export function Modules() {
             </span>
           </h2>
           <p className="max-w-md text-[15px] leading-[1.6] font-light text-zinc-400 md:pb-3">
-            Every caller gets answered, booked, or handed off — and every call
+            Every caller gets answered, booked, or handed off, and every call
             leaves behind a tagged lead, a confirmation text, and a record in
             your sheet.
           </p>
@@ -48,7 +48,7 @@ export function Modules() {
             bullets={[
               "Caller never has to wait for a callback",
               "Answers before they can get bored",
-              "Speaks like a person — no stiff menus or date codes",
+              "Speaks like a person, no stiff menus or date codes",
               "One “yes” and the slot is theirs",
             ]}
             visual={<SlotsVisual />}
@@ -56,11 +56,11 @@ export function Modules() {
           <ModuleRow
             name="Human Handoff"
             category="Bridged to your team in seconds"
-            description="The moment a caller asks for a person — or the conversation goes somewhere Operavo shouldn’t — the call bridges to your team with a short hold message. No dead air, no dropped callers."
+            description="The moment a caller asks for a person, or the conversation goes somewhere Operavo shouldn’t, the call bridges to your team with a short hold message. No dead air, no dropped callers."
             bullets={[
               "One “talk to a person” and they're connected",
-              "No dead air — callers stay engaged",
-              "Your agent is briefed before they pick up (coming soon)",
+              "No dead air, callers stay engaged",
+              "Routes to the right teammate based on caller intent",
               "If no one answers, your caller is promised a callback, not ghosted",
             ]}
             visual={<TransferVisual />}
@@ -69,10 +69,10 @@ export function Modules() {
             reverse
             name="Lead Scoring"
             category="Every caller, tagged"
-            description="After every call, Operavo tags the caller Hot, Warm, or Cold — with a two-sentence summary and a next action your team can run with. No re-listening, no guessing who to call back first."
+            description="After every call, Operavo tags the caller Hot, Warm, or Cold, with a two-sentence summary and a next action your team can run with. No re-listening, no guessing who to call back first."
             bullets={[
               "Know who to call back first, before you pour coffee",
-              "Skip the re-listen — get the gist and the next move",
+              "Skip the re-listen, get the gist and the next move",
               "Every call saved for when you need to double-check",
               "All of it in a sheet you already know how to open",
             ]}
@@ -81,10 +81,10 @@ export function Modules() {
           <ModuleRow
             name="Text Confirmation"
             category="In their pocket before they hang up"
-            description="The moment a booking confirms, Operavo fires a personalized text with the caller's name and a one-tap “Add to calendar” link — sent while the caller is still on the line. No forgotten details, no waiting for email."
+            description="The moment a booking confirms, Operavo fires a personalized text with the caller's name and a one-tap “Add to calendar” link, sent while the caller is still on the line. No forgotten details, no waiting for email."
             bullets={[
               "Caller sees it in their pocket before they hang up",
-              "Their name, their appointment — never generic",
+              "Their name, their appointment, never generic",
               "Tap once and it's on their calendar",
               "Fewer no-shows, fewer “wait, when was it again?”",
             ]}
@@ -96,7 +96,7 @@ export function Modules() {
             category="If something breaks, no one gets stuck"
             description="If audio glitches or a caller keeps getting misheard, Operavo apologizes, retries, then hands the call to a real person rather than grinding on. Callers never hear error codes or feel trapped in a loop."
             bullets={[
-              "A rough patch doesn't end the call — the AI tries again",
+              "A rough patch doesn't end the call, the AI tries again",
               "One clean exchange and everything's back on track",
               "Callers hear a polite apology, never a robotic error",
               "Anyone who says “human” gets one, instantly",
@@ -261,10 +261,10 @@ function QualificationVisual() {
   return (
     <div className="w-full max-w-[280px] space-y-2">
       {[
-        { label: "Sarah — pre-approved, 3BR", tag: "Hot", tone: "hot" },
-        { label: "Mike — seller, Upper West Side", tag: "Warm", tone: "warm" },
-        { label: "Priya — buyer, 30-day window", tag: "Hot", tone: "hot" },
-        { label: "James — research stage", tag: "Cold", tone: "cold" },
+        { label: "Sarah · pre-approved, 3BR", tag: "Hot", tone: "hot" },
+        { label: "Mike · seller, Upper West Side", tag: "Warm", tone: "warm" },
+        { label: "Priya · buyer, 30-day window", tag: "Hot", tone: "hot" },
+        { label: "James · research stage", tag: "Cold", tone: "cold" },
       ].map((r) => (
         <div
           key={r.label}
@@ -399,12 +399,12 @@ function FailureVisual() {
   const strikes = [
     {
       n: 1,
-      text: "“I didn't quite catch that — could you say it again?”",
+      text: "“I didn't quite catch that, could you say it again?”",
       tone: "soft",
     },
     {
       n: 2,
-      text: "“Sounds like a connection issue — try again, or I can connect you.”",
+      text: "“Sounds like a connection issue. Try again, or I can connect you.”",
       tone: "warn",
     },
     {
