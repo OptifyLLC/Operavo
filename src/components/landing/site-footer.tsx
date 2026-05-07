@@ -26,7 +26,7 @@ const contactLinks = [
     ),
   },
   {
-    href: "https://www.facebook.com/optifyllc",
+    href: "https://www.facebook.com/people/Operavoai/61589004074110/",
     label: "Facebook",
     icon: (
       <svg
