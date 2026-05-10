@@ -6,7 +6,7 @@ import { subscribeToNewsletter } from "@/app/actions/newsletter";
 
 const contactLinks = [
   {
-    href: "https://www.linkedin.com/company/optifyllc",
+    href: "https://www.linkedin.com/company/operavo-ai",
     label: "LinkedIn",
     icon: (
       <svg
@@ -319,10 +319,13 @@ function SocialLink({
   label: string;
   children: React.ReactNode;
 }) {
+  const isExternal = href.startsWith("http");
   return (
     <a
       href={href}
       aria-label={label}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
       className="text-zinc-500 transition-colors hover:text-white"
     >
       {children}
