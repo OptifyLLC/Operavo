@@ -35,7 +35,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="group inline-flex h-[54px] items-center gap-2.5 rounded-full bg-white pl-7 pr-2 text-[15px] font-medium text-black shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-out hover:scale-[1.02] hover:bg-zinc-100 hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)]"
           >
-            Book a demo
+            Book a Demo
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-transform duration-300 group-hover:translate-x-0.5">
               <svg
                 width="16"
@@ -51,12 +51,28 @@ export function Hero() {
               </svg>
             </span>
           </a>
-          <Link
-            href="/login"
-            className="inline-flex h-[54px] items-center gap-2 rounded-full bg-emerald-950 px-7 text-[15px] font-medium text-emerald-50 shadow-[0_0_40px_-10px_rgba(16,185,129,0.25)] transition-all duration-300 ease-out hover:scale-[1.02] hover:bg-emerald-900 hover:shadow-[0_0_60px_-15px_rgba(16,185,129,0.4)]"
+          <a
+            href="https://forms.gle/CiMEhbowW78RZ92s5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex h-[54px] items-center gap-2.5 rounded-full bg-emerald-950 pl-7 pr-2 text-[15px] font-medium text-emerald-50 shadow-[0_0_40px_-10px_rgba(16,185,129,0.25)] transition-all duration-300 ease-out hover:scale-[1.02] hover:bg-emerald-900 hover:shadow-[0_0_60px_-15px_rgba(16,185,129,0.4)]"
           >
-            Log in to dashboard
-          </Link>
+            Join Early Access
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-950 transition-transform duration-300 group-hover:translate-x-0.5">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
         </div>
 
       </div>
